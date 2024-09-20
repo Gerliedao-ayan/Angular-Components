@@ -51,6 +51,7 @@ import {UsegreetingComponent} from "./components/usegreeting/usegreeting.compone
 import {WordrevserComponent} from "./components/wordrevser/wordrevser.component";
 import {MoodtrakerComponent} from "./components/moodtraker/moodtraker.component";
 import {ColorpickerComponent} from "./components/colorpicker/colorpicker.component";
+import {CountercomponentComponent} from "./components/countercomponent/countercomponent.component";
 
 
 
@@ -98,8 +99,7 @@ const  routes: Routes = [
   { path: 'divisiblechecker', component: DivisiblecheckerComponent},
   { path: 'moodtraker', component: MoodtrakerComponent},
   { path: 'colorpicker', component: ColorpickerComponent},
-
-
+  { path: 'countercomponent', component: CountercomponentComponent},
 
 
 ]
@@ -114,6 +114,7 @@ const  routes: Routes = [
   ],
   declarations: [
     AppComponent,
+    CountercomponentComponent,
     HomepageComponent,
     ColorpickerComponent,
     ShowhellobuttonComponent,
