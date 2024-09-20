@@ -1,1 +1,3 @@
-<p>textlength works!</p>
+<input type="text" [(ngModel)]="inputString" placeholder="Enter a string">
+<button (click)="calculateLength()">Calculate Length</button>
+<p *ngIf="stringLength">String length: {{ stringLength }}</p>

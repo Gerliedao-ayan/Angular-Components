@@ -1,1 +1,5 @@
-<p>randomquotedisplay works!</p>
+<div>
+  <p id="quoteText">{{ currentQuote.text }}</p>
+  <p id="authorText">- {{ currentQuote.author }}</p>
+  <button (click)="generateQuote()">Generate Quote</button>
+</div>

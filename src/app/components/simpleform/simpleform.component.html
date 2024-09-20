@@ -1,1 +1,13 @@
-<p>simpleform works!</p>
+<form (ngSubmit)="onSubmit()">
+  <input type="text" [(ngModel)]="name" placeholder="Name">
+  <input type="text" [(ngModel)]="email" placeholder="Email">
+  <button type="submit">Submit</button>
+</form>
+
+<p *ngIf="submittedData">
+  Submitted Data:
+  <br>
+  Name: {{ submittedData.name }}
+  <br>
+  Email: {{ submittedData.email }}
+</p>

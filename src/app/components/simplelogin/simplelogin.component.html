@@ -1,1 +1,7 @@
-<p>simplelogin works!</p>
+<form (ngSubmit)="onSubmit()">
+  <input type="email" [(ngModel)]="email" name="email" placeholder="Email">
+  <input type="password" [(ngModel)]="password" name="password" placeholder="Password">
+  <button type="submit">Login</button>
+</form>
+
+<p *ngIf="errorMessage">Error: {{ errorMessage }}</p>

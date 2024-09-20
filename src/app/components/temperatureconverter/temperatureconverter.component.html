@@ -1,1 +1,11 @@
-<p>temperatureconverter works!</p>
+<div>
+  <input type="number" [(ngModel)]="celsius" placeholder="Celsius">
+  <button (click)="convertToFahrenheit()">Convert to Fahrenheit</button>
+  <p *ngIf="fahrenheitValue">Fahrenheit: {{ fahrenheitValue }} °F</p>
+</div>
+
+<div>
+  <input type="number" [(ngModel)]="fahrenheit" placeholder="Fahrenheit">
+  <button (click)="convertToCelsius()">Convert to Celsius</button>
+  <p *ngIf="celsiusValue">Celsius: {{ celsiusValue }} °C</p>
+</div>

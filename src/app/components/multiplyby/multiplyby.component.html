@@ -1,0 +1,7 @@
+<div class="multiply-container">
+  <input type="number" [(ngModel)]="numberInput" placeholder="Enter a number">
+  <span>Multiply by: </span>
+  <input type="number" [(ngModel)]="multiplier" placeholder="Enter multiplier" value="2">
+  <button (click)="multiply()">Multiply</button>
+  <p *ngIf="result !== null">Result: {{ result }}</p>
+</div>

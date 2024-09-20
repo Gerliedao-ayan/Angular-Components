@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrl: './multiplicationtable.component.css'
 })
 export class MultiplicationtableComponent {
+  number: number = 0;
+  table: number[] = [];
 
+  generateTable() {
+    this.table = [];
+    for (let i = 1; i <= 10; i++) {
+      this.table.push(i);
+    }
+  }
 }

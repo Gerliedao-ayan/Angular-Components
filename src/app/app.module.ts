@@ -152,7 +152,7 @@ const  routes: Routes = [
     RandomquotedisplayComponent,
     UppercasegreetingComponent,
     DivisiblecheckerComponent,
-
+    SimpleformComponent,
 
 
 

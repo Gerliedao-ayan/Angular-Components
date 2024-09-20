@@ -1,1 +1,3 @@
-<p>palindromechecker works!</p>
+<input type="text" [(ngModel)]="inputWord" placeholder="Enter a word">
+<button (click)="checkPalindrome()">Check</button>
+<p *ngIf="isPalindrome !== null">Result: {{ isPalindrome ? 'Palindrome' : 'Not a Palindrome' }}</p>

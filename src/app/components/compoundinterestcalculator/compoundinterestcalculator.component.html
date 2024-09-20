@@ -1,1 +1,11 @@
-<p>compoundinterestcalculator works!</p>
+<input type="number" [(ngModel)]="principal" placeholder="Principal Amount">
+<input type="number" [(ngModel)]="rate" placeholder="Interest Rate (%)">
+<input type="number" [(ngModel)]="time" placeholder="Time (in years)">
+<select [(ngModel)]="frequency">
+  <option value="1">Annually</option>
+  <option value="4">Quarterly</option>
+  <option value="12">Monthly</option>
+  <option value="365">Daily</option>
+</select>
+<button (click)="calculateCompoundInterest()">Calculate</button>
+<p *ngIf="compoundInterest !== null">Compound Interest: {{ compoundInterest }}</p>

@@ -1,0 +1,5 @@
+<textarea [(ngModel)]="sentence" placeholder="Enter your sentence"></textarea>
+<button (click)="checkEnglish()">Check English</button>
+<p *ngIf="isEnglish !== null">
+  This sentence is {{ isEnglish ? 'in English' : 'not in English' }}.
+</p>

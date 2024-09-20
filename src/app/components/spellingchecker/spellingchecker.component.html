@@ -1,0 +1,10 @@
+<textarea [(ngModel)]="sentence" placeholder="Enter your sentence"></textarea>
+<button (click)="checkSpelling()">Check Spelling</button>
+<div *ngIf="checkedWords.length > 0">
+  <h3>Spelling Results:</h3>
+  <ul>
+    <li *ngFor="let word of checkedWords">
+      {{ word.word }}: {{ word.isCorrect ? 'Correct' : 'Incorrect' }}
+    </li>
+  </ul>
+</div>

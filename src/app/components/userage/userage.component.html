@@ -1,1 +1,3 @@
-<p>userage works!</p>
+<input type="number" [(ngModel)]="birthYear" placeholder="Enter your birth year">
+<button (click)="calculateAge()">Calculate Age</button>
+<p *ngIf="age">Your age: {{ age }}</p>

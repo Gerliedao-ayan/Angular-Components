@@ -1,1 +1,8 @@
-<p>bookmarklist works!</p>
+<input type="text" [(ngModel)]="newUrl" placeholder="Enter URL">
+<button (click)="addBookmark()">Add Bookmark</button>
+
+<ul>
+  <li *ngFor="let url of bookmarks">
+    <a href="{{ url }}" target="_blank">{{ url }}</a>
+  </li>
+</ul>
