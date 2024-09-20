@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './todolist.component.css'
 })
 export class TodolistComponent {
-  tasks: { name: string; completed: boolean }[] = [];
+  todomanager: { name: string; completed: boolean }[] = [];
   newTask: string = '';
 
   constructor() { }
@@ -17,13 +17,13 @@ export class TodolistComponent {
 
   addTask() {
     if (this.newTask.trim() !== '') {
-      this.tasks.push({ name: this.newTask, completed: false });
+      this.todomanager.push({ name: this.newTask, completed: false });
       this.newTask = '';
     }
   }
 
   toggleTask(index: number) {
-    this.tasks[index].completed = !this.tasks[index].completed;
+    this.todomanager[index].completed = !this.todomanager[index].completed;
   }
 
   editTask(index: number) {
@@ -32,7 +32,7 @@ export class TodolistComponent {
   }
 
   deleteTask(index: number) {
-    this.tasks.splice(index, 1);
+    this.todomanager.splice(index, 1);
   }
 
 }
