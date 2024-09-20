@@ -7,14 +7,14 @@ import { Component } from '@angular/core';
 })
 export class GuessnumbergameComponent {
   // @ts-ignore
-  userGuess: number = null;
+  guessnumbergame: number = null;
   secretNumber: number = Math.floor(Math.random() * 100) + 1;
   message: string = '';
 
   checkGuess() {
-    if (this.userGuess === this.secretNumber) {
+    if (this.guessnumbergame === this.secretNumber) {
       this.message = 'Congratulations! You guessed the number!';
-    } else if (this.userGuess < this.secretNumber) {
+    } else if (this.guessnumbergame < this.secretNumber) {
       this.message = 'Too low! Try again.';
     } else {
       this.message = 'Too high! Try again.';
