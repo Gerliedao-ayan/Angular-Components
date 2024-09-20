@@ -7,12 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './userage.component.css'
 })
 export class UserageComponent {
-  birthYear: number = 0;
+  birthYer: number = 0;
   // @ts-ignore
   age: number = null;
 
   calculateAge() {
     const currentYear = new Date().getFullYear();
-    this.age = currentYear - this.birthYear;
+    this.age = currentYear - this.birthYer;
   }
 }
