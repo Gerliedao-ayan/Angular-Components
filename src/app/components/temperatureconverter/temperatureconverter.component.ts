@@ -7,7 +7,7 @@ import {FormsModule} from "@angular/forms";
   styleUrl: './temperatureconverter.component.css'
 })
 export class TemperatureconverterComponent {
-  celsius: number = 0;
+  temperatureconverter: number = 0;
   fahrenheit: number = 0;
   // @ts-ignore
   celsiusValue: number = null;
@@ -19,6 +19,6 @@ export class TemperatureconverterComponent {
   }
 
   convertToFahrenheit() {
-    this.fahrenheitValue = (this.celsius * 9) / 5 + 32;
+    this.fahrenheitValue = (this.temperatureconverter * 9) / 5 + 32;
   }
 }
