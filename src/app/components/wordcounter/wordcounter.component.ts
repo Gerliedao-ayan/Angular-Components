@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 export class WordcounterComponent {
   inputString: string = '';
   // @ts-ignore
-  wordCount: number = null;
+  wordcounter: number = null;
 
   countWords() {
     const words = this.inputString.trim().split(/\s+/);
-    this.wordCount = words.length;
+    this.wordcounter = words.length;
   }
 }
