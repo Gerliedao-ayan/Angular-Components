@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './showdate.component.css'
 })
 export class ShowdateComponent {
-  showdate: string = '';
+  showusername: string = '';
 
   showDateTime() {
     const now = new Date();
-    this.showdate = now.toLocaleString(); // Formats the date and time
+    this.showusername = now.toLocaleString(); // Formats the date and time
   }
 }
