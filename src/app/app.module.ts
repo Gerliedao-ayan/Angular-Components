@@ -52,6 +52,7 @@ import {WordrevserComponent} from "./components/wordrevser/wordrevser.component"
 import {MoodtrakerComponent} from "./components/moodtraker/moodtraker.component";
 import {ColorpickerComponent} from "./components/colorpicker/colorpicker.component";
 import {CountercomponentComponent} from "./components/countercomponent/countercomponent.component";
+import {ToggleComponent} from "./components/toggle/toggle.component";
 
 
 
@@ -100,6 +101,13 @@ const  routes: Routes = [
   { path: 'moodtraker', component: MoodtrakerComponent},
   { path: 'colorpicker', component: ColorpickerComponent},
   { path: 'countercomponent', component: CountercomponentComponent},
+  { path: 'toggle', component: ToggleComponent},
+
+
+
+
+
+
 
 
 ]
@@ -158,7 +166,7 @@ const  routes: Routes = [
     DivisiblecheckerComponent,
     SimpleformComponent,
     MoodtrakerComponent,
-
+    ToggleComponent,
 
 
 
