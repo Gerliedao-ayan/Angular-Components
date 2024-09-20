@@ -55,6 +55,7 @@ import {CountercomponentComponent} from "./components/countercomponent/counterco
 import {ToggleComponent} from "./components/toggle/toggle.component";
 import {ProgressbarComponent} from "./components/progressbar/progressbar.component";
 import {ChecklistComponent} from "./components/checklist/checklist.component";
+import {StarratingComponent} from "./components/starrating/starrating.component";
 
 
 
@@ -106,7 +107,7 @@ const  routes: Routes = [
   { path: 'toggle', component: ToggleComponent},
   { path: 'progressbar', component: ProgressbarComponent},
   { path: 'checklist', component: ChecklistComponent},
-
+  { path: 'starrating', component: StarratingComponent},
 
 
 
@@ -172,7 +173,7 @@ const  routes: Routes = [
     MoodtrakerComponent,
     ToggleComponent,
     ProgressbarComponent,
-
+    StarratingComponent,
 
 
 
