@@ -9,10 +9,10 @@ import { Component } from '@angular/core';
 export class SimpleformComponent {
   name: string = '';
   emai: string = '';
-  submittedData: any = null;
+  submittedDataa: any = null;
 
   onSubmit() {
-    this.submittedData = {
+    this.submittedDataa = {
       name: this.name,
       emai: this.emai
     };
