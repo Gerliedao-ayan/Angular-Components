@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class WorldshufflerComponent {
   inputWord: string = '';
-  shuffledWord: string = '';
+  wordshuffler: string = '';
 
   shuffleWord() {
     const letters = this.inputWord.split('');
@@ -15,6 +15,6 @@ export class WorldshufflerComponent {
       const j = Math.floor(Math.random() * (i + 1));
       [letters[i], letters[j]] = [letters[j], letters[i]];
     }
-    this.shuffledWord = letters.join('');
+    this.wordshuffler = letters.join('');
   }
 }
