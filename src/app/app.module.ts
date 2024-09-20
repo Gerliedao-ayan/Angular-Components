@@ -57,6 +57,7 @@ import {ProgressbarComponent} from "./components/progressbar/progressbar.compone
 import {ChecklistComponent} from "./components/checklist/checklist.component";
 import {StarratingComponent} from "./components/starrating/starrating.component";
 import {TooglecontentComponent} from "./components/tooglecontent/tooglecontent.component";
+import {CountdownComponent} from "./components/countdown/countdown.component";
 
 
 
@@ -110,7 +111,7 @@ const  routes: Routes = [
   { path: 'checklist', component: ChecklistComponent},
   { path: 'starrating', component: StarratingComponent},
   { path: 'tooglecontent', component: TooglecontentComponent},
-
+  { path: 'countdown', component: CountdownComponent},
 
 
 
@@ -176,7 +177,7 @@ const  routes: Routes = [
     ProgressbarComponent,
     StarratingComponent,
     TooglecontentComponent,
-
+    CountdownComponent,
 
 
 
