@@ -58,6 +58,7 @@ import {ChecklistComponent} from "./components/checklist/checklist.component";
 import {StarratingComponent} from "./components/starrating/starrating.component";
 import {TooglecontentComponent} from "./components/tooglecontent/tooglecontent.component";
 import {CountdownComponent} from "./components/countdown/countdown.component";
+import {SimplecalculatorComponent} from "./components/simplecalculator/simplecalculator.component";
 
 
 
@@ -112,7 +113,7 @@ const  routes: Routes = [
   { path: 'starrating', component: StarratingComponent},
   { path: 'tooglecontent', component: TooglecontentComponent},
   { path: 'countdown', component: CountdownComponent},
-
+  { path: 'simplecalculator', component: SimplecalculatorComponent},
 
 
 
@@ -178,7 +179,7 @@ const  routes: Routes = [
     StarratingComponent,
     TooglecontentComponent,
     CountdownComponent,
-
+    SimplecalculatorComponent,
 
 
 
