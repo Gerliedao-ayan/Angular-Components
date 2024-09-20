@@ -1,0 +1,14 @@
+<div class="color-picker-container">
+  <div class="color-palette">
+    <div class="color-option" (click)="selectColor('#FF0000')" style="background-color: #FF0000"></div>
+    <div class="color-option" (click)="selectColor('#00FF00')" style="background-color: #00FF00"></div>
+    <div class="color-option" (click)="selectColor('#0000FF')" style="background-color: #0000FF"></div>
+    <!-- Add more color options as needed -->
+  </div>
+
+  <div class="selected-color" [style.background-color]="selectedColor">
+    <p *ngIf="hexCodeVisible">Hex Code: {{ selectedColor }}</p>
+  </div>
+
+  <button (click)="toggleHexCodeVisibility()">Toggle Hex Code</button>
+</div>

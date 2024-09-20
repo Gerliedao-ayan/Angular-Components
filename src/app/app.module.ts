@@ -50,6 +50,7 @@ import {UppercasegreettingComponent} from "./components/uppercasegreetting/upper
 import {UsegreetingComponent} from "./components/usegreeting/usegreeting.component";
 import {WordrevserComponent} from "./components/wordrevser/wordrevser.component";
 import {MoodtrakerComponent} from "./components/moodtraker/moodtraker.component";
+import {ColorpickerComponent} from "./components/colorpicker/colorpicker.component";
 
 
 
@@ -96,8 +97,7 @@ const  routes: Routes = [
   { path: 'uppercasegreeting', component: UppercasegreettingComponent},
   { path: 'divisiblechecker', component: DivisiblecheckerComponent},
   { path: 'moodtraker', component: MoodtrakerComponent},
-
-
+  { path: 'colorpicker', component: ColorpickerComponent},
 
 
 
@@ -115,6 +115,7 @@ const  routes: Routes = [
   declarations: [
     AppComponent,
     HomepageComponent,
+    ColorpickerComponent,
     ShowhellobuttonComponent,
     DisplayhelloworldComponent,
     DisplaynameComponent,
