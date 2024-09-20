@@ -6,13 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./todomanager.component.css']
 })
 export class TodomanagerComponent {
-  newTask: string = '';
+  newTas: string = '';
   tasks: string[] = [];
 
   addTask() {
-    if (this.newTask) {
-      this.tasks.push(this.newTask);
-      this.newTask = ''; // Clear input field
+    if (this.newTas) {
+      this.tasks.push(this.newTas);
+      this.newTas = ''; // Clear input field
     }
   }
 
