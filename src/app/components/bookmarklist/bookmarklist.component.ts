@@ -12,11 +12,11 @@ import {FormsModule} from "@angular/forms";
 })
 export class BookmarklistComponent {
   newUrl: string = '';
-  bookmarks: string[] = [];
+  bookmarklist: string[] = [];
 
   addBookmark() {
     if (this.newUrl) {
-      this.bookmarks.push(this.newUrl);
+      this.bookmarklist.push(this.newUrl);
       this.newUrl = ''; // Clear input field
     }
   }
