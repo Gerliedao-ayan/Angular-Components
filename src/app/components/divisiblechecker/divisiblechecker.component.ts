@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class DivisiblecheckerComponent {
   number1: number = 0;
   number2: number = 0;
-  divisiblechecker: boolean | null = null;
+  isDivisible: boolean | null = null;
 
   checkDivisibility() {
-    this.divisiblechecker = this.number1 % this.number2 === 0;
+    this.isDivisible = this.number1 % this.number2 === 0;
   }
 }

@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class BmisolverComponent {
   height: number = 0;
   weight: number = 0;
-  bmisolver: number | null = null;
+  bmi: number | null = null;
 
   calculateBMI() {
-    this.bmisolver = this.weight / (this.height * this.height);
+    this.bmi = this.weight / (this.height * this.height);
   }
 }

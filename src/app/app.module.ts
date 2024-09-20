@@ -12,12 +12,10 @@ import {SimpleformComponent} from "./components/simpleform/simpleform.component"
 import {DisplaynameComponent} from "./components/displayname/displayname.component";
 import {CounterComponent} from "./components/counter/counter.component";
 import {UserageComponent} from "./components/userage/userage.component";
-import {UsergreetingComponent} from "./components/usergreeting/usergreeting.component";
 import {CalculatorComponent} from "./components/calculator/calculator.component";
 import {TextlengthComponent} from "./components/textlength/textlength.component";
 import {CurrencyconverterComponent} from "./components/currencyconverter/currencyconverter.component";
 import {EvenoddcheckerComponent} from "./components/evenoddchecker/evenoddchecker.component";
-import {WordreverserComponent} from "./components/wordreverser/wordreverser.component";
 import {ShowdateComponent} from "./components/showdate/showdate.component";
 import {ShowusernameComponent} from "./components/showusername/showusername.component";
 import {MultiplicationtableComponent} from "./components/multiplicationtable/multiplicationtable.component";
@@ -33,22 +31,25 @@ import {GuessnumbergameComponent} from "./components/guessnumbergame/guessnumber
 import {WordcounterComponent} from "./components/wordcounter/wordcounter.component";
 import {MultiplicationcheckerComponent} from "./components/multiplicationchecker/multiplicationchecker.component";
 import {UppercaseconverterComponent} from "./components/uppercaseconverter/uppercaseconverter.component";
-import {WordshufflerComponent} from "./components/wordshuffler/wordshuffler.component";
 import {BmisolverComponent} from "./components/bmisolver/bmisolver.component";
 import {UsernamevalidatorComponent} from "./components/usernamevalidator/usernamevalidator.component";
 import {InterestcalculatorComponent} from "./components/interestcalculator/interestcalculator.component";
 import {
   CompoundinterestcalculatorComponent
 } from "./components/compoundinterestcalculator/compoundinterestcalculator.component";
-import {FibonaccigeneratorComponent} from "./components/fibonaccigenerator/fibonaccigenerator.component";
 import {OddsumcalculatorComponent} from "./components/oddsumcalculator/oddsumcalculator.component";
 import {CurrencyformatterComponent} from "./components/currencyformatter/currencyformatter.component";
 import {RandomquotedisplayComponent} from "./components/randomquotedisplay/randomquotedisplay.component";
-import {UppercasegreetingComponent} from "./components/uppercasegreeting/uppercasegreeting.component";
 import {DivisiblecheckerComponent} from "./components/divisiblechecker/divisiblechecker.component";
 import {FormsModule} from "@angular/forms";
 import {PalindromecheckerComponent} from "./components/palindromechecker/palindromechecker.component";
 import {RandomnumbergeneratorComponent} from "./components/randomnumbergenerator/randomnumbergenerator.component";
+import {WorldshufflerComponent} from "./components/worldshuffler/worldshuffler.component";
+import {FibonnaccigeneratorComponent} from "./components/fibonnaccigenerator/fibonnaccigenerator.component";
+import {UppercasegreettingComponent} from "./components/uppercasegreetting/uppercasegreetting.component";
+import {UsegreetingComponent} from "./components/usegreeting/usegreeting.component";
+import {WordrevserComponent} from "./components/wordrevser/wordrevser.component";
+import {MoodtrakerComponent} from "./components/moodtraker/moodtraker.component";
 
 
 
@@ -60,12 +61,12 @@ const  routes: Routes = [
   { path: 'counter', component: CounterComponent},
   { path: 'simpleform', component: SimpleformComponent},
   { path: 'userage', component: UserageComponent},
-  { path: 'usergreeting', component: UsergreetingComponent},
+  { path: 'usergreeting', component: UsegreetingComponent},
   { path: 'calculator', component: CalculatorComponent},
   { path: 'textlength', component: TextlengthComponent},
   { path: 'currencyconverter', component: CurrencyconverterComponent},
   { path: 'evenoddchecker', component: EvenoddcheckerComponent},
-  { path: 'wordreverser', component: WordreverserComponent},
+  { path: 'wordreverser', component: WordrevserComponent},
   { path: 'showdate', component: ShowdateComponent},
   { path: 'showusername', component: ShowusernameComponent},
   { path: 'multiplicationable', component: MultiplicationtableComponent},
@@ -83,17 +84,18 @@ const  routes: Routes = [
   { path: 'randomnumbergenerator', component: RandomnumbergeneratorComponent},
   { path: 'multiplicationchecker', component: MultiplicationcheckerComponent},
   { path: 'uppercaseconverter', component: UppercaseconverterComponent},
-  { path: 'wordshuffler', component: WordshufflerComponent},
+  { path: 'wordshuffler', component: WorldshufflerComponent},
   { path: 'bmisolver', component: BmisolverComponent},
   { path: 'usernamevalidator', component: UsernamevalidatorComponent},
   { path: 'interestcalculator', component: InterestcalculatorComponent},
   { path: 'compoundinterestcalculator', component: CompoundinterestcalculatorComponent},
-  { path: 'fibonaccigenerator', component: FibonaccigeneratorComponent},
+  { path: 'fibonaccigenerator', component: FibonnaccigeneratorComponent},
   { path: 'oddsumcalculator', component: OddsumcalculatorComponent},
   { path: 'currencyformatter', component: CurrencyformatterComponent},
   { path: 'randomquotedisplay', component: RandomquotedisplayComponent},
-  { path: 'uppercasegreeting', component: UppercasegreetingComponent},
+  { path: 'uppercasegreeting', component: UppercasegreettingComponent},
   { path: 'divisiblechecker', component: DivisiblecheckerComponent},
+  { path: 'moodtraker', component: MoodtrakerComponent},
 
 
 
@@ -118,12 +120,12 @@ const  routes: Routes = [
     DisplaynameComponent,
     CounterComponent,
     UserageComponent,
-    UsergreetingComponent,
+    UsegreetingComponent,
     CalculatorComponent,
     TextlengthComponent,
     CurrencyconverterComponent,
     EvenoddcheckerComponent,
-    WordreverserComponent,
+    WordrevserComponent ,
     ShowdateComponent,
     ShowusernameComponent,
     MultiplicationtableComponent,
@@ -141,19 +143,19 @@ const  routes: Routes = [
     RandomnumbergeneratorComponent,
     MultiplicationcheckerComponent,
     UppercaseconverterComponent,
-    WordshufflerComponent,
+    WorldshufflerComponent,
     BmisolverComponent,
     UsernamevalidatorComponent,
     InterestcalculatorComponent,
     CompoundinterestcalculatorComponent,
-    FibonaccigeneratorComponent,
+    FibonnaccigeneratorComponent,
     OddsumcalculatorComponent,
     CurrencyformatterComponent,
     RandomquotedisplayComponent,
-    UppercasegreetingComponent,
+    UppercasegreettingComponent,
     DivisiblecheckerComponent,
     SimpleformComponent,
-
+    MoodtrakerComponent,
 
 
 

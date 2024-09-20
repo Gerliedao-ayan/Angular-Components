@@ -7,16 +7,16 @@ import { Component } from '@angular/core';
 })
 export class ShoppinglistComponent {
   newItem: string = '';
-  shoppinglist: string[] = [];
+  shoppingList: string[] = [];
 
   addItem() {
     if (this.newItem) {
-      this.shoppinglist.push(this.newItem);
+      this.shoppingList.push(this.newItem);
       this.newItem = ''; // Clear input field
     }
   }
 
   removeItem(index: number) {
-    this.shoppinglist.splice(index, 1);
+    this.shoppingList.splice(index, 1);
   }
 }

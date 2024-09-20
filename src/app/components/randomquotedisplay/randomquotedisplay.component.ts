@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./randomquotedisplay.component.css']
 })
 export class RandomquotedisplayComponent {
-  randomquotedisplay = [
+  quotes = [
     { text: "The greatest glory in living lies not in never falling, but in rising every time we fall.", author: "Nelson Mandela" },
     { text: "The way to get started is to quit talking and begin doing.", author: "Walt Disney" },
     { text: "Your time is limited, so don’t waste it living someone else’s life.", author: "Steve Jobs" },
@@ -16,7 +16,7 @@ export class RandomquotedisplayComponent {
   currentQuote = { text: "", author: "" };
 
   generateQuote() {
-    const randomIndex = Math.floor(Math.random() * this.randomquotedisplay.length);
-    this.currentQuote = this.randomquotedisplay[randomIndex];
+    const randomIndex = Math.floor(Math.random() * this.quotes.length);
+    this.currentQuote = this.quotes[randomIndex];
   }
 }

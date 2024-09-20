@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class MultiplicationcheckerComponent {
   number1: number = 0;
   number2: number = 0;
-  multiplicationchecker: boolean | null = null;
+  isMultiple: boolean | null = null;
 
   checkMultiple() {
-    this.multiplicationchecker = (this.number1 % this.number2) === 0;
+    this.isMultiple = (this.number1 % this.number2) === 0;
   }
 }

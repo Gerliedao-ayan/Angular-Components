@@ -7,19 +7,19 @@ import { Component } from '@angular/core';
 })
 export class FactorialcalculatorComponent {
   number: number = 0;
-  factorialcalculator: number | null = null;
+  factorialValue: number | null = null;
   // @ts-ignore
-  factorialcalculator: null;
+  factorialValue: null;
 
   calculateFactorial() {
     if (this.number < 0) {
-      this.factorialcalculator = null; // Factorial of negative numbers is not defined
+      this.factorialValue = null; // Factorial of negative numbers is not defined
     } else {
       let factorial = 1;
       for (let i = 1; i <= this.number; i++) {
         factorial *= i;
       }
-      this.factorialcalculator = factorial;
+      this.factorialValue = factorial;
     }
   }
 }

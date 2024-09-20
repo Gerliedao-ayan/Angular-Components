@@ -1,6 +1,6 @@
 <input type="number" [(ngModel)]="number1" placeholder="Enter the first number">
 <input type="number" [(ngModel)]="number2" placeholder="Enter the second number">
 <button (click)="checkDivisibility()">Check Divisibility</button>
-<p *ngIf="divisiblechecker !== null">
-  {{ number1 }} is {{ divisiblechecker ? 'divisible' : 'not divisible' }} by {{ number2 }}.
+<p *ngIf="isDivisible !== null">
+  {{ number1 }} is {{ isDivisible ? 'divisible' : 'not divisible' }} by {{ number2 }}.
 </p>

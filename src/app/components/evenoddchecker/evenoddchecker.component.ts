@@ -7,13 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './evenoddchecker.component.css'
 })
 export class EvenoddcheckerComponent {
-  evenoddchecker: number = 0;
+  inputNumber: number = 0;
   result: string = '';
   // @ts-ignore
   result: string;
 
   checkEvenOdd() {
-    if (this.evenoddchecker % 2 === 0) {
+    if (this.inputNumber % 2 === 0) {
       this.result = 'Even';
     } else {
       this.result = 'Odd';

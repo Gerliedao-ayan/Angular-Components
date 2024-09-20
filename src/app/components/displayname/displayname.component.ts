@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './displayname.component.css'
 })
 export class DisplaynameComponent {
-  useName: string = '';
-  displaydName: string = '';
+  userName: string = '';
+  displayedName: string = '';
 
   displayUserName() {
-    this.displaydName = this.useName;
+    this.displayedName = this.userName;
   }
 }

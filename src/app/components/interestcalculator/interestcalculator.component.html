@@ -2,4 +2,4 @@
 <input type="number" [(ngModel)]="rate" placeholder="Interest Rate (%)">
 <input type="number" [(ngModel)]="time" placeholder="Time (in years)">
 <button (click)="calculateSimpleInterest()">Calculate</button>
-<p *ngIf="interestcalculator !== null">Simple Interest: {{ interestcalculator }}</p>
+<p *ngIf="simpleInterest !== null">Simple Interest: {{ simpleInterest }}</p>

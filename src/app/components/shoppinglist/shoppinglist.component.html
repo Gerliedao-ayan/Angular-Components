@@ -2,7 +2,7 @@
 <button (click)="addItem()">Add</button>
 
 <ul>
-  <li *ngFor="let item of shoppinglist; let i = index">
+  <li *ngFor="let item of shoppingList; let i = index">
     {{ item }}
     <button (click)="removeItem(i)">Remove</button>
   </li>

@@ -9,9 +9,9 @@ export class InterestcalculatorComponent {
   principal: number = 0;
   rate: number = 0;
   time: number = 0;
-  interestcalculator: number | null = null;
+  simpleInterest: number | null = null;
 
   calculateSimpleInterest() {
-    this.interestcalculator = (this.principal * this.rate * this.time) / 100;
+    this.simpleInterest = (this.principal * this.rate * this.time) / 100;
   }
 }

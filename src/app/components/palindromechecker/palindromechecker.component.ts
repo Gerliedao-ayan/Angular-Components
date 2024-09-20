@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class PalindromecheckerComponent{
   inputWord: string = '';
-  palindromechecker: boolean | null = null;
+  isPalindrome: boolean | null = null;
 
   checkPalindrome() {
     const cleanedWord = this.inputWord.toLowerCase().replace(/[^a-z]/g, '');
-    this.palindromechecker = cleanedWord === cleanedWord.split('').reverse().join('');
+    this.isPalindrome = cleanedWord === cleanedWord.split('').reverse().join('');
   }
 }

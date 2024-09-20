@@ -7,15 +7,15 @@ import { Component } from '@angular/core';
 })
 export class UsernamevalidatorComponent {
   username: string = '';
-  usernamevalidator: string = '';
+  validationMessage: string = '';
 
   validateUsername() {
     if (this.username.length < 6) {
-      this.usernamevalidator = 'Username must be at least 6 characters long.';
+      this.validationMessage = 'Username must be at least 6 characters long.';
     } else if (!this.username.match(/^[a-zA-Z0-9]+$/)) {
-      this.usernamevalidator = 'Username can only contain letters and numbers.';
+      this.validationMessage = 'Username can only contain letters and numbers.';
     } else {
-      this.usernamevalidator = 'Valid username!';
+      this.validationMessage = 'Valid username!';
     }
   }
 }

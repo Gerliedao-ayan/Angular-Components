@@ -1,5 +1,5 @@
 <input type="number" [(ngModel)]="number1" placeholder="Enter first number">
 <input type="number" [(ngModel)]="number2" placeholder="Enter second number">
 <button (click)="checkMultiple()">Check</button>
-<p *ngIf="multiplicationchecker !== null">Result: {{ multiplicationchecker ? 'Multiple' : 'Not a Multiple' }}</p>
+<p *ngIf="isMultiple !== null">Result: {{ isMultiple ? 'Multiple' : 'Not a Multiple' }}</p>
 

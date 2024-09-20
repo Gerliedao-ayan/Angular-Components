@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class UppercasegreettingComponent {
   userName: string = '';
-  uppercasegreeting: string | null = null;
+  greeting: string | null = null;
 
   greetUser() {
-    this.uppercasegreeting = this.userName.toUpperCase();
+    this.greeting = this.userName.toUpperCase();
   }
 }

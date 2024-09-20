@@ -1,0 +1,23 @@
+<div class="mood-tracker-container">
+  <h2>Mood Tracker</h2>
+
+  <div class="mood-log">
+    <h3>Log Your Mood</h3>
+    <label for="date">Date:</label>
+    <input type="date" id="date" [(ngModel)]="selectedDate">
+    <label for="mood">Mood:</label>
+    <select id="mood" [(ngModel)]="selectedMood">
+      <option value="happy">Happy</option>
+      <option value="neutral">Neutral</option>
+      <option value="sad">Sad</option>
+      <option value="angry">Angry</option>
+      <option value="stressed">Stressed</option>
+    </select>
+    <button (click)="logMood()">Log Mood</button>
+  </div>
+
+  <div class="mood-chart">
+    <h3>Mood Trends</h3>
+    <canvas #moodCanvas></canvas>
+  </div>
+</div>

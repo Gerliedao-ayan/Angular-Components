@@ -1,8 +1,8 @@
-<input type="number" [(ngModel)]="multiplicationtable" placeholder="Enter a number">
+<input type="number" [(ngModel)]="number" placeholder="Enter a number">
 <button (click)="generateTable()">Generate Table</button>
 <div *ngIf="table">
-  <h3>Multiplication Table of {{ multiplicationtable }}</h3>
+  <h3>Multiplication Table of {{ number }}</h3>
   <ul>
-    <li *ngFor="let i of table">{{ multiplicationtable }} x {{ i }} = {{ multiplicationtable * i }}</li>
+    <li *ngFor="let i of table">{{ number }} x {{ i }} = {{ number * i }}</li>
   </ul>
 </div>
