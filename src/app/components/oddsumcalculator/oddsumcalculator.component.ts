@@ -7,12 +7,12 @@ import { Component } from '@angular/core';
 })
 export class OddsumcalculatorComponent {
   inputNumber: number = 0;
-  oddSum: number | null = null;
+  oddsumcalculator: number | null = null;
 
   calculateOddSum() {
-    this.oddSum = 0;
+    this.oddsumcalculator = 0;
     for (let i = 1; i <= this.inputNumber; i += 2) {
-      this.oddSum += i;
+      this.oddsumcalculator += i;
     }
   }
 }
