@@ -53,6 +53,7 @@ import {MoodtrakerComponent} from "./components/moodtraker/moodtraker.component"
 import {ColorpickerComponent} from "./components/colorpicker/colorpicker.component";
 import {CountercomponentComponent} from "./components/countercomponent/countercomponent.component";
 import {ToggleComponent} from "./components/toggle/toggle.component";
+import {ProgressbarComponent} from "./components/progressbar/progressbar.component";
 
 
 
@@ -102,6 +103,7 @@ const  routes: Routes = [
   { path: 'colorpicker', component: ColorpickerComponent},
   { path: 'countercomponent', component: CountercomponentComponent},
   { path: 'toggle', component: ToggleComponent},
+  { path: 'progressbar', component: ProgressbarComponent},
 
 
 
@@ -167,7 +169,7 @@ const  routes: Routes = [
     SimpleformComponent,
     MoodtrakerComponent,
     ToggleComponent,
-
+    ProgressbarComponent,
 
 
 
