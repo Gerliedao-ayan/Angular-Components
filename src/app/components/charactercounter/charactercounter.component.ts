@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class CharactercounterComponent {
   inputString: string = '';
   // @ts-ignore
-  characterCount: number = null;
+  charactercounter: number = null;
 
   countCharacters() {
-    this.characterCount = this.inputString.length;
+    this.charactercounter = this.inputString.length;
   }
 }
