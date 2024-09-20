@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class UppercaseconverterComponent {
   inputString: string = '';
-  uppercaseString: string = '';
+  uppercaseconverter: string = '';
 
   convertToUppercase() {
-    this.uppercaseString = this.inputString.toUpperCase();
+    this.uppercaseconverter = this.inputString.toUpperCase();
   }
 }
