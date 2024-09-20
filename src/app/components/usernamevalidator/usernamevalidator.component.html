@@ -1,5 +1,5 @@
 <input type="text" [(ngModel)]="username" placeholder="Enter username">
 <button (click)="validateUsername()">Validate</button>
-<p *ngIf="validationMessage">
-  {{ validationMessage }}
+<p *ngIf="usernamevalidator">
+  {{ usernamevalidator }}
 </p>
