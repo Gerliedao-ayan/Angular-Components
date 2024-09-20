@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class RandomnumbergeneratorComponent {
   min: number = 0;
   max: number = 10;
-  randomNumber: number | null = null;
+  randomnumbergenerator: number | null = null;
 
   generateRandomNumber() {
-    this.randomNumber = Math.floor(Math.random() * (this.max - this.min + 1)) + this.min;
+    this.randomnumbergenerator = Math.floor(Math.random() * (this.max - this.min + 1)) + this.min;
   }
 }
