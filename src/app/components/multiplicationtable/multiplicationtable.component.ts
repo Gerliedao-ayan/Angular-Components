@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './multiplicationtable.component.css'
 })
 export class MultiplicationtableComponent {
-  number: number = 0;
+  multiplicationtable: number = 0;
   table: number[] = [];
 
   generateTable() {
