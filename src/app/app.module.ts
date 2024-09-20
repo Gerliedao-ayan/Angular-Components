@@ -54,6 +54,7 @@ import {ColorpickerComponent} from "./components/colorpicker/colorpicker.compone
 import {CountercomponentComponent} from "./components/countercomponent/countercomponent.component";
 import {ToggleComponent} from "./components/toggle/toggle.component";
 import {ProgressbarComponent} from "./components/progressbar/progressbar.component";
+import {ChecklistComponent} from "./components/checklist/checklist.component";
 
 
 
@@ -104,7 +105,7 @@ const  routes: Routes = [
   { path: 'countercomponent', component: CountercomponentComponent},
   { path: 'toggle', component: ToggleComponent},
   { path: 'progressbar', component: ProgressbarComponent},
-
+  { path: 'checklist', component: ChecklistComponent},
 
 
 
@@ -124,6 +125,7 @@ const  routes: Routes = [
   ],
   declarations: [
     AppComponent,
+    ChecklistComponent,
     CountercomponentComponent,
     HomepageComponent,
     ColorpickerComponent,
