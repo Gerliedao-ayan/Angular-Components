@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './wordrevser.component.css'
 })
 export class WordrevserComponent {
-  inputWord: string = '';
+  wordreverser: string = '';
   reversedWord: string = '';
 
   reverseWord() {
-    this.reversedWord = this.inputWord.split('').reverse().join('');
+    this.reversedWord = this.wordreverser.split('').reverse().join('');
   }
 }
